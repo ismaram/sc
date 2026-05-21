@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #1e293b;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Quicksand', sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-quicksand {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .font-cairo {
+    font-family: 'Cairo', sans-serif;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  .soft-card {
+    @apply bg-white rounded-3xl shadow-soft border border-slate-100;
+  }
+
+  .btn-primary {
+    @apply bg-teal-500 text-white font-quicksand font-semibold px-6 py-3 rounded-2xl hover:bg-teal-600 transition-all duration-200 shadow-sm hover:shadow-md active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-blue-50 text-teal-700 font-quicksand font-semibold px-6 py-3 rounded-2xl hover:bg-blue-100 transition-all duration-200 active:scale-95;
+  }
+
+  .emergency-btn {
+    @apply bg-red-500 text-white font-quicksand font-bold px-6 py-4 rounded-2xl hover:bg-red-600 transition-all duration-200 shadow-md hover:shadow-lg active:scale-95 flex items-center justify-center gap-2;
+  }
+
+  .badge-indispensable {
+    @apply bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full;
+  }
+
+  .badge-attention {
+    @apply bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full;
+  }
+
+  .badge-interdit {
+    @apply bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Arabic RTL font override */
+.lang-ar,
+.lang-ar * {
+  font-family: 'Cairo', sans-serif;
+}
+
+.lang-ar h1,
+.lang-ar h2,
+.lang-ar h3,
+.lang-ar h4,
+.lang-ar h5 {
+  font-family: 'Cairo', sans-serif;
+}

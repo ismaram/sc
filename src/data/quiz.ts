@@ -1,0 +1,88 @@
+import { QuizQuestion } from '../types';
+
+export const quizData: QuizQuestion[] = [
+  {
+    id: 'q1',
+    question: 'Votre enfant de 3 ans s\'est brûlé avec de l\'eau chaude. Quelle est votre première action ?',
+    scenario: 'Bébé a renversé une tasse de thé tiède sur son bras.',
+    options: [
+      'Appliquer du beurre ou de la crème sur la brûlure',
+      'Refroidir sous l\'eau tiède (15°C) pendant 15 minutes',
+      'Appliquer de la glace directement sur la brûlure',
+      'Percer les cloques pour enlever le liquide',
+    ],
+    correctAnswer: 1,
+    explanation: 'La règle des 15-15-15 : eau à 15°C, pendant 15 minutes, à 15 cm. Le beurre et la crème emprisonnent la chaleur et favorisent l\'infection. La glace provoque une vasoconstriction et aggrave les lésions. Ne jamais percer les cloques !',
+    category: 'Brûlures',
+  },
+  {
+    id: 'q2',
+    question: 'Bébé (8 mois) s\'étouffe avec un morceau de fruit. Comment réagissez-vous ?',
+    scenario: 'Votre bébé était en train de manger et ne peut plus émettre de son.',
+    options: [
+      'Le tenir tête en bas et le secouer',
+      'Faire la manœuvre de Heimlich (compression abdominale)',
+      'Le coucher sur votre avant-bras, face vers le bas, et donner 5 tapes dans le dos',
+      'Tenter de retirer le morceau avec votre doigt',
+    ],
+    correctAnswer: 2,
+    explanation: 'Chez le nourrisson de moins de 1 an, la manœuvre de Heimlich (compressions abdominales) est CONTRE-INDIQUÉE. Il faut alterner 5 tapes dans le dos (face vers le bas) et 5 compressions thoraciques. Ne jamais explorer avec le doigt — cela risque d\'enfoncer davantage l\'objet.',
+    category: 'Étouffement',
+  },
+  {
+    id: 'q3',
+    question: 'Votre enfant a une fièvre à 38,8°C. Quelle dose de paracétamol lui donnez-vous ?',
+    scenario: 'Votre fils de 4 ans pèse 18 kg. Il se plaint d\'avoir chaud.',
+    options: [
+      'La dose indiquée sur la boîte pour les 3-6 ans',
+      '15 mg par kg de poids corporel, soit 270 mg pour 18 kg',
+      '500 mg, la même dose que pour les adultes en plus petit',
+      'Je ne donne rien, mieux vaut ne pas donner de médicaments',
+    ],
+    correctAnswer: 1,
+    explanation: 'Le dosage du paracétamol est TOUJOURS calculé en mg par kg de poids : 15 mg × 18 kg = 270 mg. Les indications "par tranche d\'âge" sur les boîtes sont approximatives. Peser régulièrement votre enfant vous permet d\'être précis. Maximum 4 prises par jour espacées de 6h.',
+    category: 'Fièvre',
+  },
+  {
+    id: 'q4',
+    question: 'Votre enfant a ingéré des cachets que vous laissiez dans votre sac. Que faites-vous ?',
+    scenario: 'Vous avez laissé votre sac accessible 10 minutes. Votre enfant a peut-être avalé des comprimés.',
+    options: [
+      'Le faire vomir immédiatement pour éviter l\'absorption',
+      'Lui donner du lait pour neutraliser le produit',
+      'Appeler le Centre Antipoison (0 800 59 59 59) sans faire vomir',
+      'Attendre de voir si des symptômes apparaissent',
+    ],
+    correctAnswer: 2,
+    explanation: 'Ne JAMAIS faire vomir en cas d\'intoxication médicamenteuse sans avis médical — certains médicaments brûlent l\'œsophage au retour. Appelez immédiatement le Centre Antipoison : 0 800 59 59 59 (gratuit, 24h/24). Conservez le médicament et l\'emballage pour identifier le produit et la quantité ingérée.',
+    category: 'Intoxications',
+  },
+  {
+    id: 'q5',
+    question: 'Votre enfant tombe et se fait une bosse sur la tête. Quand devez-vous consulter en urgence ?',
+    scenario: 'Votre enfant de 2 ans a glissé et a heurté le bord d\'une table.',
+    options: [
+      'Immédiatement, toute bosse à la tête est dangereuse',
+      'Jamais, les bosses sont toujours bénignes',
+      'Si vomissements répétés, somnolence inhabituelle, ou perte de connaissance',
+      'Seulement si la bosse est très grande',
+    ],
+    correctAnswer: 2,
+    explanation: 'Une bosse (hématome sous-cutané) est paradoxalement rassurante — l\'énergie du choc s\'est évacuée en surface. Consultez en urgence si : perte de connaissance (même brève), vomissements répétés, somnolence difficile à réveiller, marche instable, ou comportement inhabituel. Surveillez 24h.',
+    category: 'Chutes',
+  },
+  {
+    id: 'q6',
+    question: 'Votre bébé de 2 mois a 38,2°C. Quelle est la bonne attitude ?',
+    scenario: 'Il est 22h, bébé est agité et chaud au toucher.',
+    options: [
+      'Donner du paracétamol et attendre le lendemain',
+      'Appeler le 15 ou aller aux urgences pédiatriques immédiatement',
+      'Le déshabiller et attendre que la fièvre passe naturellement',
+      'Lui donner un bain froid pour faire baisser la fièvre',
+    ],
+    correctAnswer: 1,
+    explanation: 'Toute fièvre chez un nourrisson de moins de 3 mois (surtout < 3 mois) est une URGENCE médicale. Le système immunitaire immature ne peut pas combattre seul les infections graves. Même une fièvre à 38°C doit être évaluée en urgence. Ne jamais donner de médicament sans avis médical à cet âge.',
+    category: 'Fièvre',
+  },
+];
