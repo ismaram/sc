@@ -11,7 +11,7 @@ import { Language } from './lib/i18n';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
-  const [selectedEmergencyId, setSelectedEmergencyId] = useState('etouffement');
+  const [selectedEmergencyId, setSelectedEmergencyId] = useState('etouffementGrand');
   const [language, setLanguage] = useState<Language>('fr');
 
   useEffect(() => {

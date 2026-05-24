@@ -12,17 +12,17 @@ export default function EmergencyGestures({ onNavigate, onSelectEmergency, langu
   const t = translations[language];
 
   const emergencies = [
-    { id: 'etouffement',     icon: '🫁', title: t.etouffement,     desc: t.etouffementDesc },
-    { id: 'brulures',        icon: '🔥', title: t.brulures,        desc: t.bruluresDesc },
-    { id: 'cardiac',         icon: '❤️', title: t.cardiac,         desc: t.cardiacDesc },
-    { id: 'chute',           icon: '🤕', title: t.chute,           desc: t.chuteDesc },
-    { id: 'convulsions',     icon: '⚡', title: t.convulsions,     desc: t.convulsionsDesc },
-    { id: 'noyade',          icon: '🌊', title: t.noyade,          desc: t.noyadeDesc },
-    { id: 'saignement',      icon: '🩸', title: t.saignement,      desc: t.saignementDesc },
-    { id: 'epistaxis',       icon: '👃', title: t.epistaxis,       desc: t.epistaxisDesc },
-    { id: 'inconscientSans', icon: '💔', title: t.inconscientSans, desc: t.inconscientSansDesc },
-    { id: 'inconscientAvec', icon: '😴', title: t.inconscientAvec, desc: t.inconscientAvecDesc },
-    { id: 'intoxication',    icon: '⚠️', title: t.intoxication,   desc: t.intoxicationDesc },
+    { id: 'etouffementGrand', icon: '🫁', title: t.etouffementGrand, desc: t.etouffementGrandDesc },
+    { id: 'etouffementBebe',  icon: '👶', title: t.etouffementBebe,  desc: t.etouffementBebeDesc },
+    { id: 'brulures',         icon: '🔥', title: t.brulures,         desc: t.bruluresDesc },
+    { id: 'cardiac',          icon: '❤️', title: t.cardiac,          desc: t.cardiacDesc },
+    { id: 'convulsions',      icon: '⚡', title: t.convulsions,      desc: t.convulsionsDesc },
+    { id: 'noyade',           icon: '🌊', title: t.noyade,           desc: t.noyadeDesc },
+    { id: 'saignement',       icon: '🩸', title: t.saignement,       desc: t.saignementDesc },
+    { id: 'epistaxis',        icon: '👃', title: t.epistaxis,        desc: t.epistaxisDesc },
+    { id: 'inconscientSans',  icon: '💔', title: t.inconscientSans,  desc: t.inconscientSansDesc },
+    { id: 'inconscientAvec',  icon: '😴', title: t.inconscientAvec,  desc: t.inconscientAvecDesc },
+    { id: 'intoxication',     icon: '⚠️', title: t.intoxication,    desc: t.intoxicationDesc },
   ];
 
   const handleSelect = (id: string) => {

@@ -1,0 +1,140 @@
+import React from "react";
+
+export default function KitDeSecours() {
+  const sections = [
+    {
+      title: "🩹 Matériel de soins des plaies",
+      items: [
+        "Pansements adhésifs (petits, moyens, grands)",
+        "Compresses stériles",
+        "Bandes de gaze",
+        "Pansement compressif",
+        "Sparadrap (ruban adhésif médical)",
+      ],
+    },
+    {
+      title: "🧴 Désinfection et hygiène",
+      items: [
+        "Antiseptique (chlorhexidine ou povidone iodée)",
+        "Sérum physiologique (lavage des yeux et plaies)",
+        "Lingettes antiseptiques",
+        "Gants à usage unique",
+      ],
+    },
+    {
+      title: "✂️ Petit matériel médical",
+      items: [
+        "Ciseaux à bouts ronds",
+        "Pince à échardes",
+        "Thermomètre digital",
+        "Masques de protection",
+        "Épingles de sûreté",
+      ],
+    },
+    {
+      title: "❄️ Urgences et traumatismes",
+      items: [
+        "Poche de froid instantané",
+        "Bande élastique (entorse légère)",
+        "Couverture de survie",
+      ],
+    },
+    {
+      title: "💊 Médicaments de base (si autorisé / conseillé)",
+      items: [
+        "Paracétamol (fièvre et douleur)",
+        "Solution de réhydratation orale",
+        "Crème apaisante (piqûres, brûlures légères)",
+      ],
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-slate-50 text-gray-800">
+      {/* Header */}
+      <header className="bg-gradient-to-r from-red-500 to-orange-400 text-white p-8 text-center">
+        <h1 className="text-3xl font-bold">🧰 Kit de Secours Pédiatrique</h1>
+        <p className="mt-2 text-sm">
+          Tout ce qu’il faut pour agir rapidement en cas d’urgence chez l’enfant
+        </p>
+      </header>
+
+      <div className="max-w-6xl mx-auto p-6">
+        {/* Contenu */}
+        <h2 className="text-xl font-bold text-red-500 mb-6">
+          📦 Contenu du kit de secours
+        </h2>
+
+        <div className="space-y-6">
+          {sections.map((section, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow p-5"
+            >
+              <h3 className="font-bold text-gray-800 mb-3">
+                {section.title}
+              </h3>
+              <ul className="list-disc pl-5 space-y-1 text-sm text-gray-600">
+                {section.items.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Urgence */}
+        <h2 className="text-xl font-bold text-red-500 mt-10 mb-4">
+          🚨 En cas d’urgence
+        </h2>
+
+        <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-lg">
+          <p className="font-semibold">
+            Important : utilisez le kit uniquement en attendant les secours.
+          </p>
+          <p className="text-sm mt-1">
+            Appelez immédiatement les services d’urgence si la situation est grave.
+          </p>
+
+          <button className="mt-3 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg">
+            📞 Appeler les secours
+          </button>
+        </div>
+
+        {/* Conseils */}
+        <h2 className="text-xl font-bold text-red-500 mt-10 mb-4">
+          📌 Conseils aux parents
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            {
+              title: "Vérification régulière",
+              desc: "Contrôler les dates de péremption du matériel.",
+            },
+            {
+              title: "Accessibilité",
+              desc: "Placer le kit dans un endroit facile à atteindre.",
+            },
+            {
+              title: "Formation",
+              desc: "Apprendre les gestes de premiers secours pédiatriques.",
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="bg-white p-4 rounded-xl shadow"
+            >
+              <h3 className="font-semibold">{item.title}</h3>
+              <p className="text-sm text-gray-600 mt-1">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <footer className="text-center text-xs text-gray-500 p-6">
+        © PédiaSecours - Page éducative de premiers secours pédiatriques
+      </footer>
+    </div>
+  );
+}

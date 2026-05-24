@@ -47,7 +47,7 @@ export default function Header({ currentPage, onNavigate, onSearch, language, on
               <Heart className="w-5 h-5 text-white fill-white" />
             </div>
             <span className="font-quicksand font-700 text-xl text-slate-800 font-bold">
-              Petits<span className="text-teal-500">Soins</span>
+              Pédia<span className="text-teal-500">Secours</span>
             </span>
           </button>
 

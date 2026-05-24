@@ -9,7 +9,7 @@ interface EmergencyDetailProps {
   language?: Language;
 }
 
-export default function EmergencyDetail({ onNavigate, emergencyId = 'etouffement', language = 'fr' }: EmergencyDetailProps) {
+export default function EmergencyDetail({ onNavigate, emergencyId = 'etouffementGrand', language = 'fr' }: EmergencyDetailProps) {
   const [currentId, setCurrentId] = useState(emergencyId);
   const [openVideos, setOpenVideos] = useState<Record<string, boolean>>({});
   const t = translations[language];
@@ -19,17 +19,17 @@ export default function EmergencyDetail({ onNavigate, emergencyId = 'etouffement
   const isRtl = language === 'ar';
 
   const emergencyList = [
-    { id: 'etouffement',    label: `🫁 ${t.etouffement}` },
-    { id: 'brulures',       label: `🔥 ${t.brulures}` },
-    { id: 'cardiac',        label: `❤️ ${t.cardiac}` },
-    { id: 'chute',          label: `🤕 ${t.chute}` },
-    { id: 'convulsions',    label: `⚡ ${t.convulsions}` },
-    { id: 'noyade',         label: `🌊 ${t.noyade}` },
-    { id: 'saignement',     label: `🩸 ${t.saignement}` },
-    { id: 'epistaxis',      label: `👃 ${t.epistaxis}` },
-    { id: 'inconscientSans', label: `💔 ${t.inconscientSans}` },
-    { id: 'inconscientAvec', label: `😴 ${t.inconscientAvec}` },
-    { id: 'intoxication',   label: `⚠️ ${t.intoxication}` },
+    { id: 'etouffementGrand', label: `🫁 ${t.etouffementGrand}` },
+    { id: 'etouffementBebe',  label: `👶 ${t.etouffementBebe}` },
+    { id: 'brulures',         label: `🔥 ${t.brulures}` },
+    { id: 'cardiac',          label: `❤️ ${t.cardiac}` },
+    { id: 'convulsions',      label: `⚡ ${t.convulsions}` },
+    { id: 'noyade',           label: `🌊 ${t.noyade}` },
+    { id: 'saignement',       label: `🩸 ${t.saignement}` },
+    { id: 'epistaxis',        label: `👃 ${t.epistaxis}` },
+    { id: 'inconscientSans',  label: `💔 ${t.inconscientSans}` },
+    { id: 'inconscientAvec',  label: `😴 ${t.inconscientAvec}` },
+    { id: 'intoxication',     label: `⚠️ ${t.intoxication}` },
   ];
 
   const toggleVideo = (id: string) => {
@@ -142,7 +142,7 @@ export default function EmergencyDetail({ onNavigate, emergencyId = 'etouffement
           </ul>
         </section>
 
-        {/* Videos — one player per video */}
+        {/* Videos */}
         {media?.videos && media.videos.length > 0 && (
           <section className="bg-white rounded-3xl border border-slate-100 shadow-soft p-8">
             <div className="flex items-center gap-3 mb-6">
@@ -189,9 +189,9 @@ export default function EmergencyDetail({ onNavigate, emergencyId = 'etouffement
           <h3 className="font-quicksand font-bold text-2xl mb-3">{t.douteOuUrgence}</h3>
           <p className="text-red-100 mb-6">{t.hesitezPas}</p>
           <div className="flex gap-3 justify-center flex-wrap">
-            <a href="tel:15"  className="px-6 py-3 bg-white text-red-600 font-bold rounded-xl hover:bg-red-50 transition-colors">{t.samu}</a>
-            <a href="tel:18"  className="px-6 py-3 bg-white text-red-600 font-bold rounded-xl hover:bg-red-50 transition-colors">{t.pompiers}</a>
-            <a href="tel:112" className="px-6 py-3 bg-white text-red-600 font-bold rounded-xl hover:bg-red-50 transition-colors">{t.urgencesNum}</a>
+            <a href="tel:190" className="px-6 py-3 bg-white text-red-600 font-bold rounded-xl hover:bg-red-50 transition-colors">{t.samu}</a>
+            <a href="tel:198" className="px-6 py-3 bg-white text-red-600 font-bold rounded-xl hover:bg-red-50 transition-colors">{t.pompiers}</a>
+            <a href="tel:197" className="px-6 py-3 bg-white text-red-600 font-bold rounded-xl hover:bg-red-50 transition-colors">{t.urgencesNum}</a>
           </div>
         </div>
 

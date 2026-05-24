@@ -11,10 +11,10 @@ export default function Footer({ onNavigate, language = 'fr' }: FooterProps) {
   const t = translations[language];
 
   const officialSources = [
-    { label: 'HAS — Haute Autorité de Santé', url: 'https://www.has-sante.fr' },
-    { label: 'ANSM — Agence du médicament',   url: 'https://www.ansm.sante.fr' },
-    { label: 'Vidal — Base médicaments',       url: 'https://www.vidal.fr' },
-    { label: 'OMS — Organisation mondiale',    url: 'https://www.who.int/fr' },
+    { label: 'OMS — Organisation mondiale de la Santé', url: 'https://www.who.int/fr' },
+    { label: 'Croix-Rouge — Premiers secours',          url: 'https://www.croix-rouge.fr' },
+    { label: 'SAMU Tunisie — Protocoles urgence',       url: 'https://www.sante.gov.tn' },
+    { label: 'INEAS Tunisie — Évaluation santé',        url: 'https://www.ineas.tn' },
   ];
 
   return (
@@ -24,11 +24,11 @@ export default function Footer({ onNavigate, language = 'fr' }: FooterProps) {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-wrap items-center justify-center gap-4 text-sm font-quicksand font-semibold">
           <Phone className="w-4 h-4" />
           <span>{t.footerUrgencesBandeau}</span>
-          <a href="tel:15" className="underline hover:no-underline">{t.samu}</a>
+          <a href="tel:190" className="underline hover:no-underline">{t.samu}</a>
           <span>•</span>
-          <a href="tel:112" className="underline hover:no-underline">{t.urgencesNum}</a>
+          <a href="tel:198" className="underline hover:no-underline">{t.pompiers}</a>
           <span>•</span>
-          <a href="tel:0800595959" className="underline hover:no-underline">{t.footerCentreAntipoison}</a>
+          <a href="tel:71578036" className="underline hover:no-underline">{t.footerCentreAntipoison}</a>
         </div>
       </div>
 
@@ -41,7 +41,7 @@ export default function Footer({ onNavigate, language = 'fr' }: FooterProps) {
                 <Heart className="w-4 h-4 text-white fill-white" />
               </div>
               <span className="font-quicksand font-bold text-lg text-white">
-                Petits<span className="text-teal-400">Soins</span>
+                Pédia<span className="text-teal-400">Secours</span>
               </span>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed">{t.footerSlogan}</p>
@@ -61,10 +61,10 @@ export default function Footer({ onNavigate, language = 'fr' }: FooterProps) {
           <div>
             <h4 className="font-quicksand font-semibold text-white mb-3">{t.footerNumUrgence}</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="tel:15"  className="hover:text-teal-400 transition-colors flex items-center gap-2"><Phone className="w-3 h-3" /> {t.samu}</a></li>
-              <li><a href="tel:18"  className="hover:text-teal-400 transition-colors flex items-center gap-2"><Phone className="w-3 h-3" /> {t.pompiers}</a></li>
-              <li><a href="tel:112" className="hover:text-teal-400 transition-colors flex items-center gap-2"><Phone className="w-3 h-3" /> {t.urgencesNum}</a></li>
-              <li><a href="tel:0800595959" className="hover:text-teal-400 transition-colors flex items-center gap-2"><Phone className="w-3 h-3" /> {t.footerCentreAntipoison}</a></li>
+              <li><a href="tel:190"      className="hover:text-teal-400 transition-colors flex items-center gap-2"><Phone className="w-3 h-3" /> {t.samu}</a></li>
+              <li><a href="tel:198"      className="hover:text-teal-400 transition-colors flex items-center gap-2"><Phone className="w-3 h-3" /> {t.pompiers}</a></li>
+              <li><a href="tel:197"      className="hover:text-teal-400 transition-colors flex items-center gap-2"><Phone className="w-3 h-3" /> {t.urgencesNum}</a></li>
+              <li><a href="tel:71578036" className="hover:text-teal-400 transition-colors flex items-center gap-2"><Phone className="w-3 h-3" /> {t.footerCentreAntipoison}</a></li>
             </ul>
           </div>
 

@@ -121,7 +121,7 @@ export default function About({ language = 'fr', onNavigate }: AboutProps) {
         <section className="text-center space-y-4">
           <p className="text-slate-600">{t.contactQuestion}</p>
           <a
-            href="mailto:contact@petitssoins.fr"
+            href="mailto:contact@pediasecours.tn"
             className="inline-block px-6 py-2.5 bg-slate-100 text-slate-700 font-semibold rounded-xl hover:bg-slate-200 transition-colors"
           >
             {t.nousContacter}

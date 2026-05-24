@@ -203,11 +203,11 @@ export default function FirstAidCard({ entry, compact = false, language = 'fr' }
           {/* Emergency button */}
           {entry.hasEmergencyLink && (
             <a
-              href="tel:15"
+              href="tel:190"
               className="emergency-btn w-full text-sm"
             >
               <Phone className="w-4 h-4" />
-              {language === 'ar' ? 'الاتصال بالإسعاف — 15' : 'Appeler le SAMU — 15'}
+              {language === 'ar' ? 'الاتصال بالإسعاف — 190' : 'Appeler le SAMU — 190'}
             </a>
           )}
 
