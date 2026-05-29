@@ -57,11 +57,10 @@ export default function Header({ currentPage, onNavigate, onSearch, language, on
               <button
                 key={page}
                 onClick={() => onNavigate(page)}
-                className={`px-4 py-2 rounded-xl font-quicksand font-semibold text-sm transition-all duration-200 ${
-                  currentPage === page
+                className={`px-4 py-2 rounded-xl font-quicksand font-semibold text-sm transition-all duration-200 ${currentPage === page
                     ? 'bg-teal-50 text-teal-600'
                     : 'text-slate-600 hover:bg-slate-50 hover:text-slate-800'
-                }`}
+                  }`}
               >
                 {t[key]}
               </button>
@@ -74,35 +73,27 @@ export default function Header({ currentPage, onNavigate, onSearch, language, on
             <div className="flex items-center bg-slate-100 rounded-xl p-0.5 gap-0.5">
               <button
                 onClick={() => onLanguageChange('fr')}
-                className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all duration-200 ${
-                  language === 'fr'
+                className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all duration-200 ${language === 'fr'
                     ? 'bg-white shadow-sm text-slate-800'
                     : 'text-slate-400 hover:text-slate-600'
-                }`}
+                  }`}
                 aria-label="Français"
               >
                 FR
               </button>
               <button
                 onClick={() => onLanguageChange('ar')}
-                className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all duration-200 ${
-                  language === 'ar'
+                className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all duration-200 ${language === 'ar'
                     ? 'bg-white shadow-sm text-slate-800'
                     : 'text-slate-400 hover:text-slate-600'
-                }`}
+                  }`}
                 aria-label="العربية"
               >
                 ع
               </button>
             </div>
 
-            <button
-              onClick={() => setSearchOpen(!searchOpen)}
-              className="w-9 h-9 flex items-center justify-center rounded-xl text-slate-500 hover:bg-slate-100 hover:text-slate-700 transition-colors"
-              aria-label={t.rechercher}
-            >
-              <Search className="w-5 h-5" />
-            </button>
+
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="md:hidden w-9 h-9 flex items-center justify-center rounded-xl text-slate-500 hover:bg-slate-100 transition-colors"
@@ -140,11 +131,10 @@ export default function Header({ currentPage, onNavigate, onSearch, language, on
               <button
                 key={page}
                 onClick={() => { onNavigate(page); setMenuOpen(false); }}
-                className={`w-full px-4 py-3 rounded-xl font-quicksand font-semibold transition-colors ${isRtl ? 'text-right' : 'text-left'} ${
-                  currentPage === page
+                className={`w-full px-4 py-3 rounded-xl font-quicksand font-semibold transition-colors ${isRtl ? 'text-right' : 'text-left'} ${currentPage === page
                     ? 'bg-teal-50 text-teal-600'
                     : 'text-slate-600 hover:bg-slate-50'
-                }`}
+                  }`}
               >
                 {t[key]}
               </button>
