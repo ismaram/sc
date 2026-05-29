@@ -13,15 +13,15 @@ export default function Home({ onNavigate, onSelectEmergency, language = 'fr' }:
 
   const emergencies = [
     { icon: '🫁', label: t.etouffementGrand, id: 'etouffementGrand' },
-    { icon: '👶', label: t.etouffementBebe,  id: 'etouffementBebe' },
-    { icon: '🔥', label: t.brulures,         id: 'brulures' },
-    { icon: '❤️', label: t.cardiac,          id: 'cardiac' },
-    { icon: '⚡', label: t.convulsions,      id: 'convulsions' },
-    { icon: '🌊', label: t.noyade,           id: 'noyade' },
-    { icon: '🩸', label: t.saignement,       id: 'saignement' },
-    { icon: '👃', label: t.epistaxis,        id: 'epistaxis' },
-    { icon: '💔', label: t.inconscientSans,  id: 'inconscientSans' },
-    { icon: '😴', label: t.inconscientAvec,  id: 'inconscientAvec' },
+    { icon: '👶', label: t.etouffementBebe, id: 'etouffementBebe' },
+    { icon: '🔥', label: t.brulures, id: 'brulures' },
+    { icon: '❤️', label: t.cardiac, id: 'cardiac' },
+    { icon: '⚡', label: t.convulsions, id: 'convulsions' },
+    { icon: '🌊', label: t.noyade, id: 'noyade' },
+    { icon: '🩸', label: t.saignement, id: 'saignement' },
+    { icon: '👃', label: t.epistaxis, id: 'epistaxis' },
+    { icon: '💔', label: t.inconscientSans, id: 'inconscientSans' },
+    { icon: '😴', label: t.inconscientAvec, id: 'inconscientAvec' },
   ];
 
   const handleEmergencyClick = (id: string) => {
@@ -124,7 +124,7 @@ export default function Home({ onNavigate, onSelectEmergency, language = 'fr' }:
               SAMU 190
             </a>
             <a href="tel:198" className="px-6 py-2.5 bg-red-600 text-white font-bold rounded-xl hover:bg-red-700 transition-colors text-sm">
-              198
+              Protection Civile 198
             </a>
           </div>
         </div>
