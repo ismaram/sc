@@ -136,11 +136,10 @@ function AddEntryForm({ onClose }: { onClose: () => void }) {
               key={id}
               type="button"
               onClick={() => toggleAge(id)}
-              className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all border ${
-                entry.ageRange.includes(id)
+              className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all border ${entry.ageRange.includes(id)
                   ? 'bg-teal-500 text-white border-teal-500'
                   : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
-              }`}
+                }`}
             >
               {label}
             </button>
@@ -191,13 +190,11 @@ function AddEntryForm({ onClose }: { onClose: () => void }) {
         <button
           type="button"
           onClick={() => setEntry(p => ({ ...p, hasEmergencyLink: !p.hasEmergencyLink }))}
-          className={`w-12 h-6 rounded-full transition-colors flex items-center px-0.5 ${
-            entry.hasEmergencyLink ? 'bg-teal-500' : 'bg-slate-300'
-          }`}
+          className={`w-12 h-6 rounded-full transition-colors flex items-center px-0.5 ${entry.hasEmergencyLink ? 'bg-teal-500' : 'bg-slate-300'
+            }`}
         >
-          <div className={`w-5 h-5 bg-white rounded-full shadow transition-transform ${
-            entry.hasEmergencyLink ? 'translate-x-6' : 'translate-x-0'
-          }`} />
+          <div className={`w-5 h-5 bg-white rounded-full shadow transition-transform ${entry.hasEmergencyLink ? 'translate-x-6' : 'translate-x-0'
+            }`} />
         </button>
         <label className="text-sm font-semibold text-slate-700">
           Afficher le bouton d'appel d'urgence sur la fiche
@@ -246,11 +243,10 @@ export default function AdminDashboard() {
               <button
                 key={id}
                 onClick={() => setActiveSection(id)}
-                className={`w-full flex items-center gap-3 px-4 py-3 rounded-2xl text-sm font-quicksand font-semibold transition-all ${
-                  activeSection === id
+                className={`w-full flex items-center gap-3 px-4 py-3 rounded-2xl text-sm font-quicksand font-semibold transition-all ${activeSection === id
                     ? 'bg-teal-500 text-white shadow-sm'
                     : 'text-slate-600 hover:bg-slate-50'
-                }`}
+                  }`}
               >
                 <Icon className="w-4 h-4" />
                 {label}
@@ -274,7 +270,7 @@ export default function AdminDashboard() {
                 <h2 className="font-quicksand font-bold text-lg text-slate-800 mb-4">Activité récente</h2>
                 <div className="space-y-3">
                   {[
-                    { action: 'Fiche mise à jour', item: 'Brûlures thermiques', time: 'Il y a 2h', color: 'bg-blue-100 text-blue-600' },
+                    { action: 'Fiche mise à jour', item: 'Brûlures ', time: 'Il y a 2h', color: 'bg-blue-100 text-blue-600' },
                     { action: 'Article ajouté', item: 'Huiles essentielles chez l\'enfant', time: 'Il y a 1j', color: 'bg-green-100 text-green-600' },
                     { action: 'Médicament ajouté', item: 'Solution de réhydratation orale', time: 'Il y a 3j', color: 'bg-teal-100 text-teal-600' },
                   ].map((item, i) => (
@@ -325,11 +321,10 @@ export default function AdminDashboard() {
                       <div className="flex items-center gap-2 mt-1">
                         <span className="text-xs text-slate-500">{categoryLabels[entry.category].fr}</span>
                         <span className="text-slate-300">•</span>
-                        <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${
-                          entry.severity === 'high' ? 'bg-red-100 text-red-600' :
-                          entry.severity === 'medium' ? 'bg-yellow-100 text-yellow-600' :
-                          'bg-green-100 text-green-600'
-                        }`}>
+                        <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${entry.severity === 'high' ? 'bg-red-100 text-red-600' :
+                            entry.severity === 'medium' ? 'bg-yellow-100 text-yellow-600' :
+                              'bg-green-100 text-green-600'
+                          }`}>
                           {entry.severity === 'high' ? 'Urgence' : entry.severity === 'medium' ? 'À surveiller' : 'Bénin'}
                         </span>
                       </div>
@@ -368,13 +363,12 @@ export default function AdminDashboard() {
                     <div className="flex-1 min-w-0">
                       <p className="font-quicksand font-bold text-slate-800 truncate">{med.name}</p>
                       <div className="flex items-center gap-2 mt-1">
-                        <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${
-                          med.badge === 'indispensable' ? 'bg-green-100 text-green-600' :
-                          med.badge === 'attention' ? 'bg-yellow-100 text-yellow-600' :
-                          'bg-red-100 text-red-600'
-                        }`}>
+                        <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${med.badge === 'indispensable' ? 'bg-green-100 text-green-600' :
+                            med.badge === 'attention' ? 'bg-yellow-100 text-yellow-600' :
+                              'bg-red-100 text-red-600'
+                          }`}>
                           {med.badge === 'indispensable' ? '✅ Indispensable' :
-                           med.badge === 'attention' ? '⚠️ Attention dosage' : '🚫 Interdit'}
+                            med.badge === 'attention' ? '⚠️ Attention dosage' : '🚫 Interdit'}
                         </span>
                         <span className="text-xs text-slate-400">{med.ageRange.join(', ')} ans</span>
                       </div>
@@ -443,12 +437,10 @@ export default function AdminDashboard() {
                       <p className="font-semibold text-slate-800 text-sm">{setting.label}</p>
                       <p className="text-xs text-slate-500 mt-0.5">{setting.desc}</p>
                     </div>
-                    <div className={`w-12 h-6 rounded-full flex items-center px-0.5 flex-shrink-0 cursor-pointer ${
-                      setting.enabled ? 'bg-teal-500' : 'bg-slate-300'
-                    }`}>
-                      <div className={`w-5 h-5 bg-white rounded-full shadow transition-transform ${
-                        setting.enabled ? 'translate-x-6' : 'translate-x-0'
-                      }`} />
+                    <div className={`w-12 h-6 rounded-full flex items-center px-0.5 flex-shrink-0 cursor-pointer ${setting.enabled ? 'bg-teal-500' : 'bg-slate-300'
+                      }`}>
+                      <div className={`w-5 h-5 bg-white rounded-full shadow transition-transform ${setting.enabled ? 'translate-x-6' : 'translate-x-0'
+                        }`} />
                     </div>
                   </div>
                 ))}

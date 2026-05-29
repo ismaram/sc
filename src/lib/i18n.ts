@@ -33,7 +33,7 @@ export const translations = {
     // Emergency Gestures page
     gestesUrgence: "Gestes d'urgence",
     protocoles: "Découvrez les protocoles essentiels pour chaque type d'urgence pédiatrique.",
-    urgenceReelleBandeau: "En urgence réelle : appelez le 190 ou le 198 — N'utilisez pas ce site",
+    urgenceReelleBandeau: "En urgence réelle : appelez le 190 ou le 198 ",
     consulter: 'Consulter',
 
     // Emergency card labels & descs
@@ -41,7 +41,7 @@ export const translations = {
     etouffementGrandDesc: "L'enfant ne parle plus et ne respire pas normalement",
     etouffementBebe: "Étouffement < 1 an",
     etouffementBebeDesc: "Le nourrisson ne pleure plus et ne respire pas normalement",
-    brulures: 'Brûlures thermiques',
+    brulures: 'Brûlures',
     bruluresDesc: 'Rougeur, cloques ou peau endommagée',
     cardiac: 'Arrêt cardiaque',
     cardiacDesc: 'Perte de conscience, absence de respiration',
@@ -70,7 +70,7 @@ export const translations = {
     douteOuUrgence: 'Doute ou urgence ?',
     hesitezPas: "N'hésitez pas à appeler. Les professionnels sont là pour aider.",
     samu: 'SAMU 190',
-    pompiers: 'Pompiers 198',
+    pompiers: 'Protection Civile 198',
     urgencesNum: 'Police 197',
     autresUrgences: 'Autres urgences',
 
@@ -96,7 +96,7 @@ export const translations = {
     // About
     aproposTitle: 'À propos de PédiaSecours',
     aproposSubtitle: 'Un projet créé avec passion pour sauver des vies',
-    creeParTitre: 'Créé par une étudiante infirmière',
+    creeParTitre: 'Créé par une étudiante infirmière à l ISEPSI ',
     creeParTexte1: "Ce projet est né d'une passion : faire en sorte que chaque parent dispose des bons réflexes en cas d'urgence. En tant qu'étudiante en soins infirmiers, j'ai réalisé que les informations pédiatriques étaient soit trop complexes, soit peu fiables en ligne.",
     creeParTexte2: "PédiaSecours est ma réponse : un site simple, clair et fondé sur les recommandations officielles de santé publique.",
     notreMission: 'Notre mission',
@@ -116,18 +116,18 @@ export const translations = {
     sourceSamuDesc: "Protocoles d'urgence validés",
     avertissementTitre: '⚠️ Avertissement Important',
     avertissement1: "Ce site est strictement à titre éducatif. Il ne remplace en aucun cas une consultation médicale, une formation officielle aux premiers secours, ou l'intervention des services d'urgence.",
-    avertissement2: "En cas d'urgence réelle : Appelez immédiatement le 190 (SAMU), le 198 (Pompiers) ou le 197 (Police). Les professionnels de santé sont les seuls capables d'évaluer une situation d'urgence.",
+    avertissement2: "En cas d'urgence réelle : Appelez immédiatement le 190 (SAMU), le 198 (Protection civile) ou le 197 (Police). Les professionnels de santé sont les seuls capables d'évaluer une situation d'urgence.",
     avertissement3: "L'auteur de ce site ne peut être tenu responsable de tout dommage ou complications consécutifs à l'utilisation ou la mauvaise interprétation des informations contenues ici.",
     pretApprendreTitre: 'Prêt à apprendre les bons gestes ?',
     pretApprendreDesc: "Parcourez les fiches d'urgence et enrichissez vos connaissances en premiers secours pédiatriques.",
     consulterUrgences: 'Consulter les urgences →',
     contactQuestion: "Des questions ? Remarques ? Suggestion d'amélioration ?",
     nousContacter: 'Nous contacter',
-    copyright: '© 2025 PédiaSecours. Créé avec ❤️ pour la sécurité des enfants.',
+    copyright: '© 2026 PédiaSecours. Créé avec ❤️ pour la sécurité des enfants.',
 
     // Footer
     footerUrgencesBandeau: 'Urgences médicales :',
-    footerCentreAntipoison: 'Centre Antipoison 71 578 036',
+    footerCentreAntipoison: 'Centre Antipoison 	71 335 500',
     footerSlogan: 'Le guide de confiance pour les premiers secours pédiatriques.',
     footerGuide: 'Guide',
     footerGestesUrgence: "Gestes d'urgence",
@@ -137,7 +137,7 @@ export const translations = {
     footerNumUrgence: "Numéros d'urgence",
     footerSources: 'Sources officielles',
     footerAvertissementTexte: "Ce site est à vocation éducative et ne remplace en aucun cas une consultation médicale ou l'intervention des services de secours (190, 198, 197). En cas d'urgence, appelez immédiatement les secours.",
-    footerCopyright: '© 2025 PédiaSecours — Contenus vérifiés par des professionnels de santé',
+    footerCopyright: '© 2026 PédiaSecours — Contenus vérifiés par des professionnels de santé',
   },
 
   ar: {
@@ -172,7 +172,7 @@ export const translations = {
     // Emergency Gestures page
     gestesUrgence: 'إجراءات الطوارئ',
     protocoles: 'اكتشف البروتوكولات الأساسية لكل نوع من حالات الطوارئ عند الأطفال.',
-    urgenceReelleBandeau: 'في طوارئ حقيقية: اتصل بـ 190 أو 198 — لا تستخدم هذا الموقع',
+    urgenceReelleBandeau: 'في طوارئ حقيقية: اتصل بـ 190 أو 198 ',
     consulter: 'استشر',
 
     // Emergency card labels & descs
@@ -180,7 +180,7 @@ export const translations = {
     etouffementGrandDesc: 'الطفل لا يتكلم ولا يتنفس بشكل طبيعي',
     etouffementBebe: 'اختناق الرضيع < 1 سنة',
     etouffementBebeDesc: 'الرضيع لا يبكي ولا يتنفس بشكل طبيعي',
-    brulures: 'الحروق الحرارية',
+    brulures: 'الحروق ',
     bruluresDesc: 'احمرار أو بثور أو تلف في الجلد',
     cardiac: 'توقف القلب',
     cardiacDesc: 'فقدان الوعي وغياب التنفس',
@@ -262,7 +262,7 @@ export const translations = {
     consulterUrgences: 'استعرض الطوارئ ←',
     contactQuestion: 'أسئلة؟ ملاحظات؟ اقتراح تحسين؟',
     nousContacter: 'اتصل بنا',
-    copyright: '© 2025 PédiaSecours. أنشئ بـ ❤️ من أجل سلامة الأطفال.',
+    copyright: '© 2026 PédiaSecours. أنشئ بـ ❤️ من أجل سلامة الأطفال.',
 
     // Footer
     footerUrgencesBandeau: 'حالات الطوارئ الطبية:',
@@ -276,7 +276,7 @@ export const translations = {
     footerNumUrgence: 'أرقام الطوارئ',
     footerSources: 'المصادر الرسمية',
     footerAvertissementTexte: 'هذا الموقع لأغراض تعليمية ولا يحل بأي حال محل استشارة طبية أو تدخل خدمات الطوارئ (190، 198، 197). في حالة الطوارئ، اتصل فوراً بالمسعفين.',
-    footerCopyright: '© 2025 PédiaSecours — محتوى مُتحقَّق منه من قبل متخصصي الرعاية الصحية',
+    footerCopyright: '© 2026 PédiaSecours — محتوى مُتحقَّق منه من قبل متخصصي الرعاية الصحية',
   },
 } as const;
 
@@ -331,7 +331,7 @@ export const emergencyDetailsData = {
       ],
     },
     brulures: {
-      title: 'Brûlures thermiques',
+      title: 'Brûlures',
       icon: '🔥',
       signs: [
         "Rougeur de la peau",
@@ -596,7 +596,7 @@ export const emergencyDetailsData = {
       ],
     },
     brulures: {
-      title: 'الحروق الحرارية',
+      title: 'الحروق',
       icon: '🔥',
       signs: [
         'احمرار الجلد',

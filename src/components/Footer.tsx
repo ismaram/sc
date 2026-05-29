@@ -12,9 +12,9 @@ export default function Footer({ onNavigate, language = 'fr' }: FooterProps) {
 
   const officialSources = [
     { label: 'OMS — Organisation mondiale de la Santé', url: 'https://www.who.int/fr' },
-    { label: 'Croix-Rouge — Premiers secours',          url: 'https://www.croix-rouge.fr' },
-    { label: 'SAMU Tunisie — Protocoles urgence',       url: 'https://www.sante.gov.tn' },
-    { label: 'INEAS Tunisie — Évaluation santé',        url: 'https://www.ineas.tn' },
+    { label: 'Croix-Rouge — Premiers secours', url: 'https://www.croix-rouge.fr' },
+    { label: 'SAMU Tunisie — Protocoles urgence', url: 'https://www.sante.gov.tn' },
+    { label: 'INEAS Tunisie — Évaluation santé', url: 'https://www.ineas.tn' },
   ];
 
   return (
@@ -61,9 +61,9 @@ export default function Footer({ onNavigate, language = 'fr' }: FooterProps) {
           <div>
             <h4 className="font-quicksand font-semibold text-white mb-3">{t.footerNumUrgence}</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="tel:190"      className="hover:text-teal-400 transition-colors flex items-center gap-2"><Phone className="w-3 h-3" /> {t.samu}</a></li>
-              <li><a href="tel:198"      className="hover:text-teal-400 transition-colors flex items-center gap-2"><Phone className="w-3 h-3" /> {t.pompiers}</a></li>
-              <li><a href="tel:197"      className="hover:text-teal-400 transition-colors flex items-center gap-2"><Phone className="w-3 h-3" /> {t.urgencesNum}</a></li>
+              <li><a href="tel:190" className="hover:text-teal-400 transition-colors flex items-center gap-2"><Phone className="w-3 h-3" /> {t.samu}</a></li>
+              <li><a href="tel:198" className="hover:text-teal-400 transition-colors flex items-center gap-2"><Phone className="w-3 h-3" /> {t.pompiers}</a></li>
+              <li><a href="tel:197" className="hover:text-teal-400 transition-colors flex items-center gap-2"><Phone className="w-3 h-3" /> {t.urgencesNum}</a></li>
               <li><a href="tel:71578036" className="hover:text-teal-400 transition-colors flex items-center gap-2"><Phone className="w-3 h-3" /> {t.footerCentreAntipoison}</a></li>
             </ul>
           </div>

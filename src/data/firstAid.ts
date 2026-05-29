@@ -140,8 +140,8 @@ export const firstAidData: FirstAidEntry[] = [
   {
     id: 'brulures-1',
     title: {
-      fr: 'Brûlures thermiques',
-      ar: 'الحروق الحرارية',
+      fr: 'Brûlures ',
+      ar: 'الحروق',
     },
     category: 'brulures',
     ageRange: ['0-1', '1-3', '3-12'],
