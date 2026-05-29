@@ -152,7 +152,7 @@ export const translations = {
     // Home hero
     petitsSoins: 'PédiaSecours',
     slogan: 'الإجراءات الصحيحة يمكن أن تنقذ حياة الطفل',
-    description: 'دليل بسيط وطمأنينة لتعلم الإسعافات الأولية للأطفال. في متناول الجميع، موثوق به، أنشأته طالبة تمريض.',
+    description: 'دليل بسيط وطمأنينة لتعلم الإسعافات الأولية للأطفال. في متناول الجميع، موثوق به، أنشأته طالبة  تمريض (ISEPSI) .',
     boutonUrgences: 'الطوارئ',
     boutonConseils: 'حقيبة الإسعاف',
     boutonAPropos: 'حول',
@@ -235,7 +235,7 @@ export const translations = {
     // About
     aproposTitle: 'حول PédiaSecours',
     aproposSubtitle: 'مشروع أنشئ بشغف لإنقاذ الأرواح',
-    creeParTitre: 'أنشأته طالبة تمريض',
+    creeParTitre: '(ISEPSI) أنشأته طالبة تمريض',
     creeParTexte1: 'وُلد هذا المشروع من شغف: ضمان حصول كل والد على ردود الفعل الصحيحة في حالات الطوارئ. بوصفي طالبة تمريض، أدركت أن المعلومات المتعلقة بالأطفال إما معقدة للغاية أو غير موثوقة عبر الإنترنت.',
     creeParTexte2: 'PédiaSecours هو جوابي: موقع بسيط وواضح مبني على توصيات الصحة الرسمية.',
     notreMission: 'مهمتنا',
