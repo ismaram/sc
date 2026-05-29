@@ -13,7 +13,7 @@ export const translations = {
     // Home hero
     petitsSoins: 'PédiaSecours',
     slogan: "Les bons gestes peuvent sauver une vie d'enfant",
-    description: "Un guide simple et rassurant pour apprendre les premiers secours pédiatriques. Accessible, fiable, créé par une étudiante infirmière.",
+    description: " Un guide simple et rassurant pour apprendre les premiers secours pédiatriques : accessible, fiable et conçu par une étudiante infirmière à l’ISEPSI.",
     boutonUrgences: 'Urgences',
     boutonConseils: 'Kit de secours',
     boutonAPropos: 'À propos',
@@ -96,7 +96,7 @@ export const translations = {
     // About
     aproposTitle: 'À propos de PédiaSecours',
     aproposSubtitle: 'Un projet créé avec passion pour sauver des vies',
-    creeParTitre: 'Créé par une étudiante infirmière à l ISEPSI ',
+    creeParTitre: 'Créé par une étudiante infirmière à l’ISEPSI ',
     creeParTexte1: "Ce projet est né d'une passion : faire en sorte que chaque parent dispose des bons réflexes en cas d'urgence. En tant qu'étudiante en soins infirmiers, j'ai réalisé que les informations pédiatriques étaient soit trop complexes, soit peu fiables en ligne.",
     creeParTexte2: "PédiaSecours est ma réponse : un site simple, clair et fondé sur les recommandations officielles de santé publique.",
     notreMission: 'Notre mission',
